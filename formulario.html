@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formulario de registro</title>
+        
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+    
+        <form action="procesarPeticion.jsp" method="post">
+          <fieldset>
+           <legend>Datos requeridos</legend>
+           
+           
+          <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required><br>
+            <label for="apellido">Apellido: </label><br>
+            <input type="text" id="apellido" placeholder="Escribe tu apellido"required autofocus><br>
+            <label for="dni">Dni: </label><br>
+            <input type="number" id="dni" placeholder="Pon tu dni sin letra"required> <br>
+            <label for="dni"> </label>
+            <label>Email: </label><br>
+            <input type="email" id="email" placeholder="Escribe tu email"><br>
+            <label>Contraseña: </label><br>
+            <input type="password" id="contraseña" placeholder="Escribe tu contraseña"><br><br>
+            <label>Sexo: </label><br>
+            
+            <input type="radio" name="sexo" value="M"> Masculino <br>
+            <input type="radio" name="sexo" value="F"> Femenino <br>
+            <br>
+            <label> Servicio en el que estoy interesado: </label><br>
+                <input type="checkbox" checked> Psicologia clinica <br>
+                <input type="checkbox"> Psicologia deportiva <br>
+                <input type="checkbox"> Mindfulness <br>
+                <input type="checkbox"> Psicologia artistica <br>
+                <br>
+            <label>Pais de residencia: </label><br>
+                <select name="" id="">
+                    <option value="ARG" selected >Argentina</option><br>
+                    <option value="ESP">España</option><br>
+                    <option value="COL">Colombia</option><br>
+                </select> <br><br>
+             
+            <label>Fecha de nacimiento: </label><br>
+                <input type="date"><br>
+                <br>
+                <label>Numero de telefono: </label><br>
+                <input type="tel" name="Telefono" placeholder="Escribe tu numero de telefono"><br>
+            <label>Rango horario en que podamos contactarlo: </label><br>    
+            <input type="time"><br>
+            <input type="time"><br>
+            <br>
+            
+            <label>Escriba su contulta: </label><br>
+            <textarea name="" id="" cols="30" rows="10" required ></textarea>
+            <br>
+            <br>
+
+        </fieldset>
+            <label>Limpiar formulario: </label>
+            
+            <input type="reset"> <br>
+
+            <input type="submit" value="Enviar datos">
+
+        </form>
+    
+    
+    
+    
+    </body>
+   
+</html>
